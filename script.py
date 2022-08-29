@@ -59,3 +59,88 @@ required = 3
 
 podium = bibs[:required]
 print(podium)
+
+# jason quit
+users = {"Dave": (27, "Manager"),
+"Alexis": (33, "CEO"),
+"Jason": (22, "Apprentice")}
+
+del users["Jason"]
+print(users)
+
+
+# delete cookies
+cookies = ["site_access", "adverts"]
+permissions = (True, False, False)
+
+if permissions [-1] == False:
+    del cookies
+    print("Cookies deleted")
+
+# shopping list with update
+shopping = ["bananas", "oranges", "lemons", "carrots", "beans"]
+
+if len(shopping) > 3:
+    del shopping [-1]
+
+print(shopping)
+
+
+# add dollars
+latest = "dollars"
+collection = ["pounds", "eruos", latest]
+collection[-1] = latest
+del latest
+print(collection)
+
+
+# side salad
+side = "salad"
+meal = ["Steak", "Chips", side]
+del meal[-1]
+print(side)
+
+# scores
+scores = [30, 50, 70, 60, 60]
+
+if scores[-1] == scores[-2]:
+    print("Entry same as previous item - is it a duplicate?")
+
+
+# answers
+answers = {"yes", "sometimes", "yes", "no", "sometimes"}
+
+unique = set(answers)
+print(unique)
+
+# iris
+iris_species = ["setosa", "setosa", "siberian"]
+
+print(set(iris_species))
+
+# program - update today to day of week
+def show_programme(day):
+    for event in day:
+        print(f"Today: {event}")
+
+monday = ["Swan Lake", "Ravel - Piano Concerto"]
+tuesday = ["La Boheme"]
+
+show_programme(monday)
+show_programme(tuesday)
+
+# help customers
+def help_customers(customers):
+    counter = 1
+    while counter < customers :
+        print(f"Customer no{counter} go to the next free desk")
+        counter +=1
+help_customers(3)
+
+#show instructions 
+def show_instructions(ingredients):
+    for item in ingredients :
+      print(f"Stir in: {item}")
+    
+cake = ["flour", "softened butter", "milk", "sugar", "eggs"]
+show_instructions(cake)
