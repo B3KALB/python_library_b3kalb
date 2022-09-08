@@ -144,3 +144,13 @@ def show_instructions(ingredients):
     
 cake = ["flour", "softened butter", "milk", "sugar", "eggs"]
 show_instructions(cake)
+print("Throw it in the pan!")
+
+# find the two that add up tp target
+nums = [2,7,11,15,9,3] 
+target = 14
+
+for i in range(len(nums)):
+    for b in range(len(nums)):
+        if nums[i]+nums[b] == target:
+            print("nums "+ str(i) + " nums " + str(b))
