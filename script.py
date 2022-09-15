@@ -240,3 +240,25 @@ if n >= 0:
     countdown(n)
 else:
     countup(n)
+
+# unit3 cs1101 LJ ex2
+# working
+not_here = [1, 2, 3]
+
+def run_time_error(it):
+    
+        print(f"Not today {it}!")
+
+oops = not_here[2]
+
+run_time_error(oops)
+# not working
+not_here = [1, 2, 3]
+
+def run_time_error(it):
+    
+        print(f"Not today {it}!")
+
+oops = not_here[3]
+
+run_time_error(oops)
