@@ -195,3 +195,24 @@ def new_funk():
 new_funk()
 
 print(outside_var)
+
+# unit 2 question from Kenedy,
+def new_line():
+
+    print('.')
+
+def this_is_it(funCall):
+    
+    funCall = print("Calls the function")
+    
+this_is_it(new_line())
+
+# unit 3 cs 1101 Countup
+def countup(n):
+     if n >= 0:
+          print('Blastoff!')
+     else:
+          print(n)
+          countup(n+1)
+          
+countup(-3)
