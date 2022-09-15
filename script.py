@@ -220,20 +220,22 @@ countup(-3)
 # unit3 the big one
 def countdown(n):
      if n <= 0:
-          print('Pos Blastoff!')
+          print('Blastoff!')
      else:
           print(n)
           countdown(n-1)
           
 def countup(n):
      if n >= 0:
-          print('Neg Blastoff!')
+          print('Blastoff!')
      else:
           print(n)
           countup(n+1)
           
 whole_num = input("Please enter an integer: ")
+
 n = int(whole_num)
+
 if n >= 0:
     countdown(n)
 else:
