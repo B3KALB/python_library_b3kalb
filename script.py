@@ -146,6 +146,8 @@ cake = ["flour", "softened butter", "milk", "sugar", "eggs"]
 show_instructions(cake)
 print("Throw it in the pan!")
 
+# LOST MY JOB OVER THIS ONE
+# 
 # find the two that add up tp target
 nums = [2,7,11,15,9,3] 
 target = 14
@@ -154,6 +156,18 @@ for i in range(len(nums)):
     for b in range(len(nums)):
         if nums[i]+nums[b] == target:
             print("nums "+ str(i) + " nums " + str(b))
+# MY VAR
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+target_value = int(input("Enter a target value 1-20: "))
+
+def which_add_up(nums, target):
+    print(f"The numbers are {nums}")
+    for i in range(len(nums)):
+        for b in range(len(nums)):
+            if nums[i]+nums[b] == target:
+                print("index "+ str(i) + " and index " + str(b) + f" equal {target}.")
+                print(f"{nums[i]} + {nums[b]} = {target}")
+which_add_up(nums, target_value)
 
         
 # example 1
@@ -217,7 +231,8 @@ def countup(n):
           
 countup(-3)
 
-# unit3 the big one
+# # unit3 cs1101 LJ
+#  ex1
 def countdown(n):
      if n <= 0:
           print('Blastoff!')
@@ -236,12 +251,14 @@ whole_num = input("Please enter an integer: ")
 
 n = int(whole_num)
 
-if n >= 0:
+if n > 0:
     countdown(n)
-else:
+elif n < 0:
     countup(n)
+else:
+     print('Blastoff!')
 
-# unit3 cs1101 LJ ex2
+# ex2
 # working
 not_here = [1, 2, 3]
 
@@ -252,6 +269,10 @@ def run_time_error(it):
 oops = not_here[2]
 
 run_time_error(oops)
+
+# <br>
+print("--------")
+
 # not working
 not_here = [1, 2, 3]
 
@@ -262,3 +283,18 @@ def run_time_error(it):
 oops = not_here[3]
 
 run_time_error(oops)
+
+# UNIT4-
+import math
+
+# EXAMPLE 1 hypotenuse
+
+leg_x = float(input("leg X = "))# this sets our input x as a variable
+
+leg_y = float(input("leg Y = "))#this sets our input y as a variable
+
+def hypotenuse(x, y):# this creates our function and passes in the two arguments 
+    z = math.sqrt(x**2 + y**2)# this does the heavy lifting by finding the sqr root of our two variables to the second power and added together
+    print(f"The hypotenuse of leg Z = {round(z, 2)}")# this prints the value of variable z and i have rounded that to the nearest hundredth
+
+hypotenuse(leg_x, leg_y)# this calls our function and passes in the two live variables as arguments
