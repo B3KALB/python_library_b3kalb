@@ -298,3 +298,11 @@ def hypotenuse(x, y):# this creates our function and passes in the two arguments
     print(f"The hypotenuse of leg Z = {round(z, 2)}")# this prints the value of variable z and i have rounded that to the nearest hundredth
 
 hypotenuse(leg_x, leg_y)# this calls our function and passes in the two live variables as arguments
+
+Str="python programming"
+a=Str.upper()
+print(a)
+str1="JAVA PROGRAMMING"
+b=str1.lower()
+print(b)
+print("Str: {} and str1: {}".format(a, b))
